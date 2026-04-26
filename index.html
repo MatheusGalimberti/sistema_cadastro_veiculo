@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Cadastro de Veículos</h1>
+
+        <p class="descricao">
+            Preencha os dados abaixo para cadastrar um veículo.
+        </p>
+
+        <form id="formVeiculo">
+            <div class="campo">
+                <label for="placa">Placa</label>
+                <input type="text" id="placa" name="placa" required maxlength="10">
+            </div>
+
+            <div class="campo">
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" name="marca" required maxlength="100">
+            </div>
+
+            <div class="campo">
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" name="modelo" required maxlength="100">
+            </div>
+
+            <div class="campo">
+                <label for="ano_fabricacao">Ano de fabricação</label>
+                <input type="number" id="ano_fabricacao" name="ano_fabricacao" required min="1900" max="2100">
+            </div>
+
+            <div class="campo">
+                <label for="ano_modelo">Ano do modelo</label>
+                <input type="number" id="ano_modelo" name="ano_modelo" required min="1900" max="2100">
+            </div>
+
+            <div class="campo">
+                <label for="cor">Cor</label>
+                <input type="text" id="cor" name="cor" required maxlength="50">
+            </div>
+
+            <div class="campo">
+                <label for="combustivel">Combustível</label>
+                <select id="combustivel" name="combustivel" required>
+                    <option value="">Selecione</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Etanol">Etanol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Flex">Flex</option>
+                    <option value="Elétrico">Elétrico</option>
+                    <option value="Híbrido">Híbrido</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="quilometragem">Quilometragem</label>
+                <input type="number" id="quilometragem" name="quilometragem" required min="0">
+            </div>
+
+            <div class="campo">
+                <label for="chassi">Chassi</label>
+                <input type="text" id="chassi" name="chassi" required maxlength="17">
+            </div>
+
+            <div class="campo">
+                <label for="renavam">Renavam</label>
+                <input type="text" id="renavam" name="renavam" required maxlength="11">
+            </div>
+
+            <div class="campo campo-completo">
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" name="observacoes" required></textarea>
+            </div>
+
+            <button type="submit">Cadastrar veículo</button>
+        </form>
+
+        <a href="listar.html" class="link-listagem">Ver veículos cadastrados</a>
+    </main>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
