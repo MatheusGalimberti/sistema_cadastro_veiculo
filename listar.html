@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Veículos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Veículos Cadastrados</h1>
+
+        <p class="descricao">
+            Confira abaixo a lista de veículos cadastrados no sistema.
+        </p>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Placa</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Ano Fab.</th>
+                        <th>Ano Modelo</th>
+                        <th>Cor</th>
+                        <th>Combustível</th>
+                        <th>KM</th>
+                        <th>Chassi</th>
+                        <th>Renavam</th>
+                        <th>Cadastro</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaVeiculos">
+                    <!-- Os veículos serão inseridos aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <a href="index.html" class="link-listagem">Voltar para o cadastro</a>
+    </main>
+
+    <script src="js/listar.js"></script>
+</body>
+</html>
