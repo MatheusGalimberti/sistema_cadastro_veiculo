@@ -16,7 +16,7 @@ Projeto desenvolvido como desafio acadêmico utilizando tecnologias web.
 - Cadastro de veículos
 - Armazenamento em banco de dados
 - Validação de campos obrigatórios
-- Listagem de veículos (em desenvolvimento)
+- Listagem de veículos
 
 ## 🗄️ Estrutura do Banco
 
